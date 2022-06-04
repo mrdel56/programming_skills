@@ -4,16 +4,16 @@ int main()
     int i;
     double x;
     int count=0;
-    double avg;
+    double sum;
     for(i=0; i<6;i++)
     {
         scanf("%lf",&x);
         if(x>=0){           
             count++;
-            avg += x;
+            sum += x;
         }       
     }
     printf("%d valores positivos\n",count);
-    printf("%.1lf\n",avg/count);
+    printf("%.1lf\n",sum/count);
     return 0;
 }
